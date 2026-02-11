@@ -1,3 +1,9 @@
+---
+layout: default
+title: RemindR
+---
+
+
 # RemindR 📌
 
 Your daily accountability partner for students and professionals.
