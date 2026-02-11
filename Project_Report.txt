@@ -97,9 +97,25 @@ Date: 2026-02-10
 Today's Tasks:
 06:00-07:00 Study physics: ✅ Completed
 07:30-08:00 Workout: ❌ Not Completed
+   Reason: Felt tired after class, will do tomorrow morning
 14:00-15:00 Revise Rust basics: ✅ Completed
 
-The report allows the user to reflect, learn from missed tasks, and track progress over time.
+The report captures not just what was missed, but WHY—enabling meaningful reflection and better planning.
+
+-------------------------------------------------
+7.1 Reflection & Accountability
+-------------------------------------------------
+
+Unlike simple to-do lists, RemindR asks *why* a task wasn't completed. 
+This transforms a missed task from a failure into a learning opportunity.
+
+Example reasons captured:
+- "Underestimated time needed"
+- "Distracted by phone"
+- "Task was too vague"
+- "Emergency came up"
+
+Over time, users can identify patterns in their missed tasks and adjust their habits accordingly.
 
 -------------------------------------------------
 8. Installation
