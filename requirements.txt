@@ -1,0 +1,9 @@
+ RemindR - Requirements for full functionality
+
+ 1. Zenity - used for desktop popups
+ 2. Paplay - used for alarm sounds
+
+ Notes:
+ - If Zenity or Paplay are not installed, RemindR will still run in the terminal,
+   but popups and alarms will not appear.
+ - No other external dependencies are required.

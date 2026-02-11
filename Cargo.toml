@@ -1,0 +1,11 @@
+[package]
+name = "remindr"
+version = "0.1.0"
+edition = "2021"
+description = "RemindR: A personal automation tool that shows desktop reminders, motivational messages, deadlines, and daily reports to help stay organized and productive"
+authors = ["Thant Zin Tun <thant.tun@stud.th-deg.de>"]
+license = "MIT"
+
+[dependencies]
+chrono = "0.4"
+ctrlc = "3.4"  

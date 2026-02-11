@@ -1,0 +1,199 @@
+RemindR – Personal Automation Tool Project Report
+=================================================
+
+Student: Thant Zin Tun
+Course: Health Informatics, Deggendorf Institute of Technology
+Semester: 1st Semester
+Project: Personal Automation Tool – RemindR
+Date: 2026-02-11
+
+-------------------------------------------------
+1. Introduction
+-------------------------------------------------
+
+RemindR is a Rust-based command-line tool that automates daily task reminders, deadlines, and motivational feedback. 
+
+It was inspired by a personal challenge: often, we promise ourselves tasks “tomorrow,” but distractions, scrolling, or vague planning make it easy to procrastinate. 
+
+RemindR externalizes your inner voice: it reminds you of your promises, motivates you during the day, and tracks your progress through daily reports.
+
+-------------------------------------------------
+2. Problem Statement
+-------------------------------------------------
+
+- Many people fail to complete tasks due to lack of accountability and poor visibility of deadlines.
+- Traditional reminders or apps often fail to motivate users.
+- Tracking progress over time is rarely automated in a simple, beginner-friendly manner.
+
+Goal: Build a tool that ensures daily task commitment, provides deadline awareness, and tracks task completion automatically.
+
+-------------------------------------------------
+3. Project Objectives
+-------------------------------------------------
+
+- Automate daily reminders for tasks and deadlines.
+- Show desktop popups and alarm sounds when tasks start and end.
+- Prompt for task completion with motivational feedback.
+- Track tasks and generate a daily report.
+- Display deadline countdowns for exams, projects, or work.
+
+-------------------------------------------------
+4. Key Features
+-------------------------------------------------
+
+- Desktop popups for tasks (start/end notifications via Zenity)
+- Alarm sounds to make reminders impossible to miss (via Paplay)
+- Daily motivational messages to keep users focused
+- Task completion prompts (Yes/No) with feedback
+- Reason for Incomplete Tasks: Input why a task was not completed; saved in the daily report
+- Deadline countdowns for exams, projects, or work
+- Automatic daily report generation (daily_report_YYYY-MM-DD.txt)
+- Terminal fallback if Zenity or Paplay are not installed
+- Beginner-friendly, fully automated, practical for daily personal use
+
+-------------------------------------------------
+5. Target Audience
+-------------------------------------------------
+
+- Students (exams, assignments, study routines)
+- Professionals (project deadlines, focused work blocks)
+- Anyone who benefits from personal accountability and structured daily planning
+
+RemindR is universal and not limited to students — it helps users of all ages maintain discipline and track progress.
+
+-------------------------------------------------
+6. How It Works
+-------------------------------------------------
+
+1. Night before: Edit `reminders.txt` with tasks and deadlines. Example:
+
+06:00-07:00 Study physics
+07:30-08:00 Workout
+14:00-15:00 Revise Rust basics
+DEADLINE 2026-02-28 Midterm Exam
+DEADLINE 2026-03-01 Project Submission
+
+2. Morning: Run the program:
+
+./target/release/remindr
+
+3. During the day:
+   - Popups appear at task start and end
+   - Alarm sounds play
+   - Task completion is prompted with Yes/No
+   - Deadline countdowns show remaining days
+
+4. End of day:
+   - Daily report is automatically saved
+   - User is reminded to set the next day's tasks
+
+-------------------------------------------------
+7. Daily Report Example
+-------------------------------------------------
+
+Saved automatically as `daily_report_YYYY-MM-DD.txt`:
+
+Date: 2026-02-10
+Today's Tasks:
+06:00-07:00 Study physics: ✅ Completed
+07:30-08:00 Workout: ❌ Not Completed
+14:00-15:00 Revise Rust basics: ✅ Completed
+
+The report allows the user to reflect, learn from missed tasks, and track progress over time.
+
+-------------------------------------------------
+8. Installation
+-------------------------------------------------
+
+Requirements:
+
+- Rust 1.70+ (for building from source)
+- Linux system
+- Optional (for full functionality):
+  - zenity – for desktop popups
+  - paplay – for alarm sounds
+
+Build:
+
+git clone <your-github-repo-url>
+cd remindr
+cargo build --release
+
+Run:
+
+# Run with default reminders file
+./target/release/remindr
+
+# Optional: use custom reminders file
+./target/release/remindr my_schedule.txt
+
+-------------------------------------------------
+9. Business Model (Single 7-Day Trial)
+-------------------------------------------------
+
+- 7-Day Trial: Full access to RemindR for 7 days.
+- After 7 days: Users must pay to continue using the tool. Free access is no longer available.
+
+Pricing Example:
+
+- Monthly: €5 per month
+- Yearly: €50 per year (saves 2 months compared to monthly)
+
+Included Features (Trial & Paid):
+
+- Desktop popups and alarm reminders
+- Motivational messages
+- Task completion prompts and feedback
+- Deadline countdowns
+- Automatic daily reports
+
+This approach emphasizes commitment and accountability: you try it for 7 days, experience the value, and then decide whether to continue by subscribing.
+
+-------------------------------------------------
+10. Marketing & Website
+-------------------------------------------------
+
+Website / Online Presence:
+
+- GitHub repository serves as the primary website.
+- Includes all source code, precompiled Linux binaries, and README.md.
+- README.md contains instructions, screenshots, workflow, and business model.
+
+User Attraction Strategies:
+
+1. Social Media & Productivity Communities
+   - Post on Reddit, university forums, and student mailing lists
+
+2. Clear Documentation
+   - README.md provides step-by-step instructions for beginners
+   - Terminal fallback ensures usability without Zenity/Paplay
+
+3. Personal Story / Motivation
+   - Highlights the tool’s origin from personal experience and habit-forming benefits
+
+-------------------------------------------------
+11. Privacy & Trust
+-------------------------------------------------
+
+- All data is stored locally on the device by default.
+- No cloud storage or accounts are required.
+- Daily reports and reminders remain on the device and can be deleted anytime.
+
+-------------------------------------------------
+12. Summary
+-------------------------------------------------
+
+RemindR is a practical, beginner-friendly CLI tool that turns intentions into actions.  
+By combining **night-before planning**, **morning commitment**, **motivational nudges**, **deadline tracking**, and **daily reports**, RemindR helps users stay accountable, reduce procrastination, and track progress consistently.  
+
+It meets the exam requirements:
+
+- Source code and binaries ready
+- Functional CLI tool
+- GitHub as a website for marketing and distribution
+- Clear business model (7-day trial)
+- Target audience and usage explained
+- Installation and privacy details included
+
+-------------------------------------------------
+
