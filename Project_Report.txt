@@ -172,8 +172,9 @@ This approach emphasizes commitment and accountability: you try it for 7 days, e
 Website / Online Presence:
 
 - GitHub repository serves as the primary website.
-- Includes all source code, precompiled Linux binaries, and README.md.
-- README.md contains instructions, screenshots, workflow, and business model.
+- Includes all source code, precompiled Linux binaries, and comprehensive documentation.
+- README.md directs users to Project_Report.txt for complete documentation.
+- Project_Report.txt contains detailed instructions, workflow, business model, and feature explanations.
 
 User Attraction Strategies:
 
@@ -181,7 +182,7 @@ User Attraction Strategies:
    - Post on Reddit, university forums, and student mailing lists
 
 2. Clear Documentation
-   - README.md provides step-by-step instructions for beginners
+   - Project_Report.txt provides comprehensive step-by-step instructions for beginners
    - Terminal fallback ensures usability without Zenity/Paplay
 
 3. Personal Story / Motivation
