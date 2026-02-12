@@ -25,7 +25,7 @@ RemindR externalizes your inner voice: it reminds you of your promises, motivate
 - Traditional reminders or apps often fail to motivate users.
 - Tracking progress over time is rarely automated in a simple, beginner-friendly manner.
 
-Goal: Build a tool that ensures daily task commitment, provides deadline awareness, and tracks task completion automatically.
+Goal: Develop an automated tool that reinforces daily task commitment, increases deadline awareness, and not only tracks task completion but also captures reasons for incomplete tasks to encourage reflection and continuous self-improvement.
 
 -------------------------------------------------
 3. Project Objectives
