@@ -31,11 +31,14 @@ Goal: Build a tool that ensures daily task commitment, provides deadline awarene
 3. Project Objectives
 -------------------------------------------------
 
-- Automate daily reminders for tasks and deadlines.
-- Show desktop popups and alarm sounds when tasks start and end.
-- Prompt for task completion with motivational feedback.
-- Track tasks and generate a daily report.
-- Display deadline countdowns for exams, projects, or work.
+- Automate daily reminders for scheduled tasks and deadlines.
+- Provide real-time desktop notifications and alarm sounds when tasks start and end.
+- Prompt users to confirm task completion at the end of each task.
+- Capture and store reasons for incomplete tasks to enable behavioral reflection and habit improvement.
+- Generate structured daily reports summarizing completed, missed, and skipped tasks.
+- Display deadline countdowns to increase awareness and reduce last-minute stress.
+- Ensure usability in different environments through terminal fallback when desktop tools are unavailable.
+- Promote accountability, self-discipline, and consistent daily planning through automation.
 
 -------------------------------------------------
 4. Key Features
